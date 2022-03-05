@@ -19,6 +19,11 @@
   "homepage": "https://github.com/Souvikns/notion-blogger-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0"
+    "@actions/github": "^5.0.0",
+    "notion-blogger": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.6.2"
   }
 }

@@ -7,6 +7,15 @@ branding:
 inputs:
   GITHUB_TOKEN: 'your GitHub Token'
   requried: true
+  NOTION_API_KEY:
+    description: 'your notion API key'
+    requried: true
+  NOTION_DATABASE:
+    description: 'your notion database id'
+    requried: true
+  SERVICE_API_KEYS:
+    description: 'json string of api keys for the services'
+    requried: true
 
 runs:
   using: node12
