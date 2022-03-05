@@ -1,0 +1,13 @@
+name: 'notion-blogger-action'
+author: Souvik De 
+description: 'Blog to different platforms using github action and notion'
+branding:
+  color:  gray-black
+  icon: disc
+inputs:
+  GITHUB_TOKEN: 'your GitHub Token'
+  requried: true
+
+runs:
+  using: node12
+  main: dist/index.js
