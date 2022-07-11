@@ -9,12 +9,12 @@ const serviceApiKeys = process.env.SERVICE_API_KEYS || core.getInput('SERVICE_AP
 
 
 async function run() {
-    const notionBlogger = new NotionBlogger({
-        notion: {
-            api_key: notionApiKey,
-            database_id: notionDatabase
-        }
-    })
+    // const notionBlogger = new NotionBlogger({
+    //     notion: {
+    //         api_key: notionApiKey,
+    //         database_id: notionDatabase
+    //     }
+    // })
 
     console.log('LOADING CREDENTIALS');
     console.log('NOTION API KEY: ', notionApiKey !== undefined);
