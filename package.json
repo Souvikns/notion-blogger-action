@@ -2,9 +2,11 @@
   "name": "notion-blogger-action",
   "version": "1.0.0",
   "description": "Use notion to blog to different platforms.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "package": "ncc build ./build -o dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.34.0",
     "notion-blogger": "^0.0.1"
   },
   "devDependencies": {

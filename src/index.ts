@@ -16,7 +16,11 @@ async function run() {
         }
     })
 
-    await notionBlogger.publish(JSON.parse(serviceApiKeys));
+    console.log('LOADING CREDENTIALS');
+    console.log('NOTION API KEY: ', notionApiKey !== undefined);
+    console.log('NOTION DATABASE ID: ', notionDatabase !== undefined);
+
+    //await notionBlogger.publish(JSON.parse(serviceApiKeys));
 }
 
 run().then().catch(e => {

@@ -1,0 +1,15 @@
+name: Notion Blogger
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  notion-blogger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Notion Blogger
+        uses: ./
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE: ${{ secrets.NOTION_DATABASE }}
