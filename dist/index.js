@@ -45,6 +45,7 @@ async function run() {
     console.log('LOADING CREDENTIALS');
     console.log('NOTION API KEY: ', notionApiKey !== undefined);
     console.log('NOTION DATABASE ID: ', notionDatabase !== undefined);
+    console.log('SERVICE_API_KEYS: ', serviceApiKeys);
     //await notionBlogger.publish(JSON.parse(serviceApiKeys));
 }
 run().then().catch(e => {
