@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Notion Blogger
         uses: ./
+        with:
+          SERVICE_API_KEYS: '{"dev": "secret"}'
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE: ${{ secrets.NOTION_DATABASE }}
